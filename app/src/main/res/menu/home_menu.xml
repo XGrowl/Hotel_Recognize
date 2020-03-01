@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home_blue_24dp"
+        android:title="主页" />
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_home_blue_24dp"
+        android:title="搜索" />
+    <item
+        android:id="@+id/tourFragment"
+        android:icon="@drawable/ic_home_blue_24dp"
+        android:title="旅行" />
+    <item
+        android:id="@+id/hotelFragment"
+        android:icon="@drawable/ic_home_blue_24dp"
+        android:title="酒店" />
+    <item
+        android:id="@+id/hotelDetailFragment"
+        android:icon="@drawable/ic_home_blue_24dp"
+        android:title="详情" />
+</menu>

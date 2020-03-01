@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+       <ImageView
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:id="@+id/resident_head"
+           android:background="@color/app_color_blue_2_pressed"/>
+
+    <TextView
+        android:id="@+id/resident_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_alignTop  ="@+id/resident_head"
+        android:layout_toEndOf="@+id/resident_head"
+        android:text="XBH"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_below="@+id/resident_name"
+        android:id="@+id/resident_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/resident_name"
+        android:text="优秀"/>
+
+</RelativeLayout>

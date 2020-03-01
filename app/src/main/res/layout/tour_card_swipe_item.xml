@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tour_item_linear"
+    android:layout_width="336dp"
+    android:layout_height="426dp"
+    android:background="@drawable/img_card_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <com.example.a80797.bookhotel_recognize.view.RoundImageView
+            android:id="@+id/tour_card_swipe_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/image3"
+            app:radius="7.5dp" />
+
+        <ImageView
+            android:id="@+id/iv_dislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:alpha="0"
+            android:src="@drawable/img_dislike" />
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0"
+            android:src="@drawable/img_like" />
+        <TextView
+            android:id="@+id/tour_card_swip_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:text="999"
+            android:textColor="@color/qmui_config_color_red"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+       >
+
+        <TextView
+            android:id="@+id/tour_card_swipe_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="万达"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tour_card_swipe_Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tour_card_swipe_Title"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:text="9.9" />
+
+        <View
+            android:id="@+id/tour_card_swipe_nothing"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tour_card_swipe_Score"
+            android:background="@color/qmui_config_color_50_blue" />
+
+        <TextView
+            android:id="@+id/tour_card_swipe_point_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tour_card_swipe_nothing"
+            android:layout_margin="2dp"
+            android:text="xxx省xxx市xxx区xxx路xxx号(xxx对面)"
+            android:textColor="@color/qmui_config_color_gray_9"
+            android:textSize="15dp" />
+
+        <include
+            android:id="@+id/tour_evaluate_float_layout"
+            layout="@layout/tour_evaluate_float_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tour_card_swipe_point_location"
+            android:layout_margin="5dp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tour_card_swip_evaluate"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tour_evaluate_float_layout"-->
+<!--            android:text="很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽很美丽"-->
+<!--            android:textColor="@color/qmui_config_color_gray_8"-->
+<!--            android:textSize="10dp"-->
+<!--            android:textStyle="bold" />-->
+
+
+        <Button
+            android:id="@+id/tour_card_swip_detail_button"
+            android:layout_width="57dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="详情"
+            android:textColor="@color/qmui_config_color_50_blue" />
+    </RelativeLayout>
+
+</LinearLayout>

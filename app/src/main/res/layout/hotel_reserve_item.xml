@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.example.a80797.bookhotel_recognize.view.RoundImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image1"
+        android:scaleType="centerCrop"
+        app:radius="5dp"
+        android:id="@+id/hotel_reserve_facality_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="豪华大床"
+            android:layout_toRightOf="@+id/hotel_reserve_facality_image"
+            android:id="@+id/hotel_reserve_facality_name"
+            android:layout_marginStart="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hotel_reserve_facality_image"
+         android:layout_centerVertical="true"
+        android:text="16m3"
+        android:id="@+id/hotel_reserve_facality_evaluate"/>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:layout_marginStart="10dp"
+        style="@style/QDRoundButtonStyle"
+        android:layout_alignBottom="@+id/hotel_reserve_facality_image"
+        android:layout_toRightOf="@+id/hotel_reserve_facality_image"
+        android:text="价格实惠" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hotel_reserve_facality_detail"
+        android:src="@drawable/ic_details_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/hotel_reserve_facality_detail"
+            android:id="@+id/hotel_reserve_facality_original_price"
+            android:text="￥329"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hotel_reserve_facality_price"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/hotel_reserve_facality_detail"
+        android:textColor="@color/qmui_config_color_50_blue"
+        android:text="￥229"/>
+
+    <Button
+        android:layout_width="39dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_toStartOf="@+id/hotel_reserve_facality_detail"
+        android:background="@color/qmui_config_color_blue"
+        android:gravity="center"
+        android:text="xxxxxxxxx"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>

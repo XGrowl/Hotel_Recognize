@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/starFragment"
+        android:icon="@mipmap/icon_star"
+        android:title="热点"
+        />
+    <item
+        android:id="@+id/eatFragment"
+        android:icon="@mipmap/icon_eat"
+        android:title="饮食" />
+    <item
+        android:id="@+id/sceneryFragment"
+        android:icon="@mipmap/icon_scenery"
+        android:title="景点" />
+    <item
+        android:id="@+id/hotelFragment"
+        android:icon="@mipmap/icon_hotel"
+        android:title="酒店" />
+</menu>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+    <LinearLayout
+        android:layout_height="155dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       >
+
+           <ImageView
+               android:id="@+id/icon_date"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/icon_data"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="入住时间"
+               android:layout_centerVertical="true"
+               android:id="@+id/check_in_title"
+               android:layout_toEndOf="@+id/icon_date"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/check_in_text"
+               android:layout_centerVertical="true"
+               android:layout_toEndOf="@id/check_in_title"
+               android:layout_marginRight="10dp"
+               android:text="@string/check_in_string"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="退房时间"
+               android:layout_centerVertical="true"
+               android:layout_toStartOf="@+id/check_out_text"/>
+           <TextView
+               android:layout_alignParentEnd="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:id="@+id/check_out_text"
+               android:text="@string/check_out_string"/>
+
+   </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/icon_baby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_baby"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="儿童及其加床"
+                android:layout_centerVertical="true"
+                android:id="@+id/rules_text"
+                android:layout_toEndOf="@+id/icon_baby"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rules_more_text"
+                android:layout_below="@+id/icon_baby"
+                android:textColor="@color/qmui_config_color_gray_5"
+                android:layout_alignStart="@+id/rules_text"
+                android:text="@string/rules_text_string"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="6dp"
+            android:src="@color/contentDividerLine" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/eat_facility_title"
+                style="@style/ContentMainBadgeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="酒店膳食"
+                />
+
+            <TextView
+                android:id="@+id/eat_facility_contain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/eat_facility_title"
+                android:layout_alignStart="@id/eat_facility_title"
+                android:layout_below="@id/eat_facility_title"
+                android:text="@string/eat_facility_contain"
+                android:textColor="@color/mainTextColor"
+                android:textSize="18sp"
+          />
+            <TextView
+                android:id="@+id/recreation_facility_title"
+                android:layout_marginTop="20dp"
+                style="@style/ContentMainBadgeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eat_facility_contain"
+                android:text="娱乐设施"
+                />
+
+            <TextView
+                android:id="@+id/recreation_facility_contain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/recreation_facility_title"
+                android:layout_alignStart="@id/recreation_facility_title"
+                android:layout_below="@id/recreation_facility_title"
+                android:text="个人电影院，AR游戏厅，KTV"
+                android:textColor="@color/mainTextColor"
+                android:textSize="18sp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/gym_facility_title"
+                style="@style/ContentMainBadgeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="健身设备" />
+
+            <TextView
+                android:id="@+id/other_facility_contain"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gym_facility_title"
+                android:layout_alignStart="@id/gym_facility_title"
+                android:layout_below="@id/gym_facility_title"
+                android:text="划船器、健美车、健步机、跑步机、美腰机,杠铃,哑铃"
+                android:textColor="@color/mainTextColor"
+                android:textSize="18sp"
+              />
+
+            <TextView
+                android:id="@+id/content_to_address_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/other_facility_contain"
+                android:layout_alignStart="@id/other_facility_contain"
+                android:layout_below="@id/other_facility_contain"
+                android:text="@string/other_facility_contain_more"
+                android:textColor="@color/mainTextColor"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

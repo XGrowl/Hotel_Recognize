@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hot_recondation_nav"
+    app:startDestination="@id/starFragment">
+
+    <fragment
+        android:id="@+id/starFragment"
+        android:name="com.example.a80797.bookhotel_recognize.home.hotRecomdation.StarFragment"
+        android:label="fragment_star"
+        tools:layout="@layout/fragment_star" />
+    <fragment
+        android:id="@+id/eatFragment"
+        android:name="com.example.a80797.bookhotel_recognize.home.hotRecomdation.EatFragment"
+        android:label="fragment_eat"
+        tools:layout="@layout/fragment_eat" />
+</navigation>
