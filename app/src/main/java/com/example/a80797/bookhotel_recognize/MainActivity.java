@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.qmuiteam.qmui.util.QMUIStatusBarHelper;
+import com.qmuiteam.qmui.widget.QMUILoadingView;
 import com.qmuiteam.qmui.widget.QMUITopBarLayout;
 
 import java.security.cert.TrustAnchor;

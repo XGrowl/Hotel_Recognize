@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/spacing_large">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/style_black_normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_item_height"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="请输入支付密码"
+
+                android:textStyle="bold" />
+            <!--cancel键-->
+            <ImageView
+                android:id="@+id/iv_close"
+                android:clickable="true"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_tiny"
+                android:src="@drawable/icon_delete"/>
+        </RelativeLayout>
+
+        <View style="@style/style_separate_line" />
+        <!--操作文字-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_content"-->
+<!--            style="@style/style_black_normal_text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="@dimen/text_item_height"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:gravity="center"-->
+<!--            android:textStyle="bold" />-->
+        <!--支付金额-->
+        <TextView
+            android:id="@+id/tv_content2"
+            style="@style/style_black_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_item_height"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+          />
+<!--        &lt;!&ndash;额外扣除手续费&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_content3"-->
+<!--            style="@style/style_black_normal_text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="@dimen/text_item_height2"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:gravity="center" />-->
+        <!--密码输入框-->
+<!--        <LinearLayout-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:paddingBottom="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:background="#000000">-->
+<!--        <com.qmuiteam.qmui.widget.QMUILoadingView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="支付中"-->
+<!--                android:textSize="10dp"-->
+<!--                android:textColor="@color/white"/>-->
+<!--        </LinearLayout>-->
+
+        <com.example.a80797.bookhotel_recognize.pay.view.PayPassWordView
+            android:id="@+id/payPwdView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <!--键盘-->
+    <com.example.a80797.bookhotel_recognize.pay.view.PassWordInputView
+        android:id="@+id/inputMethodView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

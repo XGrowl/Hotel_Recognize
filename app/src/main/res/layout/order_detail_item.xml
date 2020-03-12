@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/order_detail_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03-03"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/qmui_config_color_gray_6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_detail_data_description"
+            android:text="无餐式"
+            android:layout_toRightOf="@+id/order_detail_data"
+            android:textColor="@color/qmui_config_color_gray_6"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/qmui_config_color_gray_8"
+        android:id="@+id/order_detail_account"
+        android:text="1×￥321"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/order_detail_data_description"/>
+
+</RelativeLayout>
