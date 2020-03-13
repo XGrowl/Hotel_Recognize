@@ -40,6 +40,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.2.1'
     //loading
     implementation 'com.github.ForgetAll:LoadingDialog:v1.1.2'
+    //圆形头像
     implementation project(':vorolay1')
     implementation project(path: ':card_swipe')
+    implementation project(path: ':viewlibrary')
 }

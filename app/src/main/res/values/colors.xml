@@ -31,5 +31,7 @@
     <color name="gray_line">#d5d1d1</color>
     <color name="black">#000000</color>
     <color name="black_text">#212121</color>
+    <color name="text_color_fc">#fc7878</color>
+    <color name="color_87d1ab">#87d1ab</color>
 
 </resources>

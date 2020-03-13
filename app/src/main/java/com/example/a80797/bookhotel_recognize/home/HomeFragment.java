@@ -88,7 +88,8 @@ public class HomeFragment extends Fragment {
         peripheralZoneAdapter=new PeripheralZoneAdapter();
         peripheralRecycler.setAdapter(peripheralZoneAdapter);
         LinearLayoutManager layoutManager=new LinearLayoutManager(requireContext());
-        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+
         peripheralRecycler.setLayoutManager(layoutManager);
         toolbar.getBackground().mutate().setAlpha(0);
         //scrollview滚动状态监听

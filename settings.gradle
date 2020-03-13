@@ -1,3 +1,3 @@
-include ':app', ':vorolay1', ':card_swipe'
+include ':app', ':vorolay1', ':card_swipe', ':viewlibrary'
 rootProject.name='bookHotel_recognize'
 project(':card_swipe').projectDir = new File('cardSwipeLayout')

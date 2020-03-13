@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon_pay_success"
-          />
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,9 +31,9 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:layout_weight="3">
-        <com.sunshine.viewlibrary.WaveView
+        <com.example.a80797.bookhotel_recognize.view.PercentageBallView
 
-            android:id="@+id/waveView"
+            android:id="@+id/ball"
             android:layout_width="100dp"
             android:layout_height="100dp"
             />
