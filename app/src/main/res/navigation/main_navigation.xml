@@ -25,4 +25,9 @@
         android:name="com.example.a80797.bookhotel_recognize.hotel.HotelFragment"
         android:label="fragment_hotel"
         tools:layout="@layout/fragment_hotel" />
+    <fragment
+        android:id="@+id/mineFragment"
+        android:name="com.example.a80797.bookhotel_recognize.mine.MineFragment"
+        android:label="fragment_mine"
+        tools:layout="@layout/fragment_mine" />
 </navigation>

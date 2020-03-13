@@ -31,4 +31,6 @@
     <string name="check_out_string">17:00-22:00</string>
     <string name="rules_text_string">酒店允许携带儿童入住 每件客房最多容纳1名儿童</string>
     <string name="eat_facility_contain">养身套餐,豪华套餐，VIP套餐，总统配置套餐</string>
+    <string name="isUp" />
+    <string name="offset" />
 </resources>

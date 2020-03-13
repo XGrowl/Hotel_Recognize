@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.a80797.bookhotel_recognize.view.CircleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="100dp"
+    android:layout_height="100dp"
+android:layout_margin="10dp"
+    android:id="@+id/gym_facility_relative"
+
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_treadmill"
+        android:layout_marginTop="5dp"
+        android:id="@+id/gym_facility_icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_below="@+id/gym_facility_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="跑步机"
+        android:textSize="12dp"
+        android:id="@+id/gym_facility_name"
+        android:textColor="@color/white"
+        />
+    <LinearLayout
+        android:layout_below="@id/gym_facility_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gym_facility_use"
+            android:text="17"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "/>
+        <TextView
+
+            android:id="@+id/gym_facility_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            />
+    </LinearLayout>
+
+</com.example.a80797.bookhotel_recognize.view.CircleRelativeLayout>

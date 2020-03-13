@@ -3,4 +3,20 @@
     <declare-styleable name="RoundImageView">
         <attr name="radius" format="reference|dimension" />
     </declare-styleable>
+
+    <declare-styleable name="WaveView">
+        <attr name="CircleBackgroundColor" format="color" />
+        <attr name="outBackgroundColor" format="color" />
+        <attr name="WaveColor" format="color" />
+        <attr name="MidTextColor" format="color" />
+        <attr name="MidTextSize" format="dimension" />
+        <attr name="MidBoldTextSize" format="dimension" />
+    </declare-styleable>
+
+        <declare-styleable name="CircleRelativeLayoutLayout">
+            <attr name="background_color" format="color" />
+            <attr name="background_alpha" format="integer" />
+        </declare-styleable>
+
+
 </resources>

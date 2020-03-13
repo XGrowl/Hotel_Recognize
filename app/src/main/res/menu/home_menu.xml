@@ -18,7 +18,7 @@
         android:icon="@drawable/ic_home_blue_24dp"
         android:title="酒店" />
     <item
-        android:id="@+id/hotelDetailFragment"
+        android:id="@+id/mineFragment"
         android:icon="@drawable/ic_home_blue_24dp"
-        android:title="详情" />
+        android:title="我的" />
 </menu>
