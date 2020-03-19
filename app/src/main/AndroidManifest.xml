@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.a80797.bookhotel_recognize">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,23 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".facility.gym.GymActivity">
+        <activity android:name=".pay.failPayActivity"></activity>
+        <activity android:name=".pay.successPayActivity" />
+        <activity android:name=".pay.hotelDetailBottomActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mine.MineActivity">
-
-        </activity>
-        <activity android:name=".pay.failPayActivity" />
-        <activity android:name=".pay.successPayActivity" />
-        <activity android:name=".pay.hotelDetailBottomActivity" />
         <activity android:name=".pay.PayActivity" />
         <activity android:name=".hotel.hotelDetailActivity" />
         <activity android:name=".WelcomeActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
