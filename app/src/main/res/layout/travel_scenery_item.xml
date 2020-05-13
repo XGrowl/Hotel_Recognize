@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginStart="10dp">
+<ImageView
+    android:id="@+id/travel_scenery_image"
+    android:layout_width="100dp"
+    android:layout_height="80dp"
+    android:src="@drawable/tour0"
+    android:layout_centerVertical="true"
+    />
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/travel_scenery_image"
+        android:id="@+id/travel_scenery_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="四川"
+        android:layout_toRightOf="@+id/travel_scenery_image"
+        android:textStyle="bold"
+        android:textColor="@color/qmui_config_color_gray_5"
+        android:textSize="@dimen/font_larger"
+        />
+    <TextView
+        android:paddingTop="@dimen/dp_10"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4A景点"
+        android:textColor="@color/qmui_config_color_gray_3"
+       android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/travel_scenery_image"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="山青"
+        android:textColor="@color/qmui_config_color_gray_3"
+        android:layout_alignBottom="@+id/travel_scenery_image"
+        android:layout_toRightOf="@+id/travel_scenery_image"/>
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/tour_relative"
+    app:qmui_borderColor="@color/white"
+    android:layout_height="200dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    app:qmui_radius="4dp"
+
+    >
+
+    <TextView
+        android:id="@+id/scenic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="九寨沟"
+        android:textColor="@color/gray_hint"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/scenic_title"
+        android:layout_toRightOf="@+id/scenic_title"
+        android:src="@drawable/icon_arrow_bottom" />
+
+    <com.github.ivbaranov.mfb.MaterialFavoriteButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        app:mfb_animate_favorite="true"
+        app:mfb_animate_unfavorite="false"
+        app:mfb_bounce_duration="300"
+        app:mfb_color="black"
+        app:mfb_favorite_image="@drawable/like"
+        app:mfb_not_favorite_image="@drawable/dislike"
+        app:mfb_padding="12"
+        app:mfb_rotation_angle="360"
+        app:mfb_rotation_duration="400"
+        app:mfb_size="48"
+
+        app:mfb_type="star" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/scenic_title"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:padding="@dimen/font_normal"
+            android:scaleType="centerCrop"
+
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:padding="@dimen/font_normal"
+                android:id="@+id/image2"
+                android:scaleType="centerCrop"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                />
+
+            <ImageView
+                android:padding="@dimen/font_normal"
+                android:id="@+id/image3"
+                android:scaleType="centerCrop"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="推荐理由: you can you up"
+        android:textColor="@color/gray_line"
+        android:textSize="@dimen/font_large"
+        android:padding="5dp"/>
+
+</com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>

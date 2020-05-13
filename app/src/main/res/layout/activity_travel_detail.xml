@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".travel.travelDetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.youth.banner.Banner
+        android:id="@+id/travel_scenery_banner"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:translationZ="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.youth.banner.Banner>
+
+    <TextView
+       android:id="@+id/temp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="#00000000"
+        android:text="瀑布之景更为神奇秀丽"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/scenic_relative"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/temp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/temp1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="山清水秀" />
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/scenic_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+       android:paddingBottom="10dp"
+        android:translationZ="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/travel_scenery_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/travel_scenery_banner">
+        <TextView
+            android:paddingTop="@dimen/font_normal"
+            android:paddingStart="@dimen/font_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="九寨沟风景区"
+            android:id="@+id/scenic_detail_title"
+            android:textColor="@color/qmui_config_color_gray_5"
+            android:textSize="@dimen/font_large"/>
+        <TextView
+            android:paddingStart="@dimen/font_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="4.5"
+            android:id="@+id/resident_evaluation_score"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:textColor="@color/app_color_blue_2_pressed"/>
+        <TextView
+            android:paddingStart="@dimen/font_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_color_blue_2_pressed"
+            android:textStyle="bold"
+            android:id="@+id/scenic_detail_descraption"
+            android:layout_below="@+id/scenic_detail_title"
+            android:text="九寨沟归来不着水"
+            android:layout_marginEnd="30dp"/>
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+            app:qmui_borderColor="@color/white"
+            android:id="@+id/roundelative1"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scenic_detail_descraption"
+            android:orientation="horizontal"
+            android:background="@color/yellow"
+            android:paddingStart="@dimen/font_normal"
+            android:paddingEnd="@dimen/font_normal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/gold_image"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_gold"
+                />
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gold_image"
+                android:textStyle="bold"
+                android:text="该地区排名第三"
+                android:textColor="@color/qmui_config_color_gray_5"/>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                
+                android:src="@drawable/right_gray_arrow"/>
+
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+           android:id="@+id/roundelative2"
+            android:layout_marginTop="10dp"
+            app:qmui_borderColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roundelative1"
+            android:orientation="horizontal"
+            android:background="@color/yellow"
+            android:paddingStart="@dimen/font_normal"
+            android:paddingEnd="@dimen/font_normal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/star_image"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_score"
+                />
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/star_image"
+                android:textStyle="bold"
+                android:text="四川阿坝藏族自治区"
+                android:textColor="@color/qmui_config_color_gray_5"/>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:src="@drawable/right_gray_arrow"/>
+
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+            android:layout_marginTop="10dp"
+            app:qmui_borderColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roundelative2"
+            android:orientation="horizontal"
+            android:background="@color/yellow"
+            android:paddingStart="@dimen/font_normal"
+            android:paddingEnd="@dimen/font_normal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/tempcheck"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/nothing_icon"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tempcheck"
+                android:textStyle="bold"
+                android:text="停止营业"
+                android:layout_centerVertical="true"
+                android:textColor="@color/qmui_config_color_gray_5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_color_blue_2_pressed"
+                android:textStyle="bold"
+               android:layout_alignParentEnd="true"
+                android:layout_below="@+id/scenic_detail_title"
+                android:text="更多详情"
+                />
+
+        </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_marginTop="40dp"
+        android:id="@+id/bottomNavigationView"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        app:menu="@menu/travel_menu"
+        app:itemIconTint="@color/color_state_menu_navi"
+        app:itemTextColor="@color/color_state_menu_navi"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="一人游"
+        android:layout_margin="10dp"
+        app:qmui_radius="10dp"/>
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="高端游"
+        android:layout_margin="10dp"
+        app:qmui_radius="10dp"/>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="跟团游"
+        android:layout_margin="10dp"
+        app:qmui_radius="10dp"/>
+
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="自助游"
+        android:layout_margin="10dp"
+        app:qmui_radius="10dp"/>
+
+
+
+</LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="match_parent"
+        android:id="@+id/travel_scenery_recycler"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/travel_evaluate_recycler"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -9,27 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".facility.gym.GymActivity">
+        <activity android:name=".travel.travelDetailActivity"></activity>
+        <activity android:name=".travel.TravelActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".pay.failPayActivity"></activity>
+
+        <activity android:name=".facility.gym.GymActivity" />
+        <activity android:name=".pay.failPayActivity" />
         <activity android:name=".pay.successPayActivity" />
-        <activity android:name=".pay.hotelDetailBottomActivity">
-
-        </activity>
-        <activity android:name=".mine.MineActivity">
-
-        </activity>
+        <activity android:name=".pay.hotelDetailBottomActivity" />
+        <activity android:name=".mine.MineActivity"></activity>
         <activity android:name=".pay.PayActivity" />
         <activity android:name=".hotel.hotelDetailActivity" />
         <activity android:name=".WelcomeActivity" />
-        <activity android:name=".MainActivity" >
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

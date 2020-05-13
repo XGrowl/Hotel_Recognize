@@ -40,7 +40,16 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.2.1'
     //loading
     implementation 'com.github.ForgetAll:LoadingDialog:v1.1.2'
-    //圆形头像
+
+//    设置动画
+    implementation 'jp.wasabeef:fresco-processors:2.1.0'
+//    模糊背景
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+    implementation 'com.shizhefei:ViewPagerIndicator:1.1.2'
+    implementation 'com.facebook.fresco:fresco:2.2.0'
+//    喜爱
+    implementation 'com.github.ivbaranov:materialfavoritebutton:0.1.5'
+
     implementation project(':vorolay1')
     implementation project(path: ':card_swipe')
     implementation project(path: ':viewlibrary')

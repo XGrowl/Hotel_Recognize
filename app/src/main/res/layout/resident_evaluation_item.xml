@@ -4,11 +4,11 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-       <ImageView
+       <com.example.a80797.bookhotel_recognize.view.CircleRelativeLayout
            android:layout_width="50dp"
            android:layout_height="50dp"
            android:id="@+id/resident_head"
-           android:background="@color/app_color_blue_2_pressed"/>
+           />
 
     <TextView
         android:id="@+id/resident_name"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/icon_scenery"
+        android:title="景点" />
+    <item
+android:icon="@drawable/icon_strategy"
+        android:title="攻略" />
+    <item
+android:icon="@drawable/icon_evaluate"
+        android:title="点评" />
+
+</menu>

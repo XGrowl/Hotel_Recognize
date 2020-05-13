@@ -33,5 +33,15 @@
     <color name="black_text">#212121</color>
     <color name="text_color_fc">#fc7878</color>
     <color name="color_87d1ab">#87d1ab</color>
+    <color name="divider_gray">#fafafa</color>
+    <color name="dividerColor">#BDBDBD</color>
+    <color name="lightgray">#d3d3d3</color>
+    <color name="orangered">#ff4500</color>
+    <color name="dodgerblue">#1e90ff</color>
+    <color name="darkgray">#a9a9a9</color>
+    <color name="yellow">#ffff00</color>
+    <color name="type_gray">#f8f8f8</color>
+    <color name="type_normal">#6b6b6b</color>
+    <color name="dicator_line_blue">#0000cd</color>
 
 </resources>
